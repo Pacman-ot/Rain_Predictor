@@ -48,9 +48,7 @@ This project aims to predict rainfall in millimeters using a Support Vector Regr
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
-
-This project is licensed under the MIT License.
+## Overview
 ```
 
 This README.md file provides a comprehensive overview of your rainfall prediction project. It includes information about the project's features, installation instructions, usage guidelines, and contribution information. 
