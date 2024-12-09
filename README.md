@@ -44,6 +44,55 @@ This project aims to predict rainfall in millimeters using a Support Vector Regr
    python app.py
    ```
 
+## API Endpoint
+
+### POST /predict
+
+Make a rainfall prediction.
+
+**Input Parameters:**
+
+The model takes the following input parameters:
+
+- Soil Moisture (%)
+- Solar Radiation (W/m^2)
+- Cloud Cover (%)
+- Humidity (%)
+- Temperature (°C)
+
+**Request Body:**
+
+```json
+{
+  "temperature": 22.5,
+  "humidity": 75,
+  "cloud_cover": 60,
+  "solar_radiation": 250.0,
+  "soil_moisture": 30.5,
+}
+```
+
+**Response:**
+
+```json
+{
+  "predicted_rainfall": 33.96
+}
+```
+
+## Model Input Details
+
+The Support Vector Regressor model uses the following features to predict rainfall:
+
+1. **Soil Moisture (%)**: The amount of water present in the soil, expressed as a percentage.
+2. **Solar Radiation (W/m^2)**: The amount of solar energy reaching the Earth's surface, measured in watts per square meter.
+3. **Cloud Cover (%)**: The percentage of the sky covered by clouds.
+4. **Humidity (%)**: The amount of water vapor present in the air, expressed as a percentage.
+5. **Temperature (°C)**: The air temperature measured in degrees Celsius.
+
+These parameters provide a comprehensive set of meteorological and environmental factors that influence rainfall, allowing the model to make accurate predictions.
+
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
