@@ -12,12 +12,12 @@ This project aims to predict rainfall in millimeters using a Support Vector Regr
 ## INCULSIONS 
 1. extended_rainfall_dataset.csv: Dataset used for the prediction
 2. Rainfall_Prediction.ipynb: The python notebook file that was used for,
-        ->Data Loading and Exploration
-        ->Data Preprocessing and Feature Engineering
-        ->Exploratory Data Analysis (EDA)
-        ->Model Selection and Training
-        ->Model Evaluation and Interpretation
-        ->Conclusion and Future Work
+        -Data Loading and Exploration
+        -Data Preprocessing and Feature Engineering
+        -Exploratory Data Analysis (EDA)
+        -Model Selection and Training
+        -Model Evaluation and Interpretation
+        -Conclusion and Future Work
 3. static\styles.css: Holds the designing for the prediction website.
 4. templates\index.html: Holds the html structure of the prediction website.
 5. SVRModel.pkl: The pickle file of the model trained.
