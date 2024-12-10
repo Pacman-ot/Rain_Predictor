@@ -28,8 +28,7 @@ This project aims to predict rainfall in millimeters using a Support Vector Regr
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/rainfall-prediction.git
-   cd rainfall-prediction
+   git clone https://github.com/Pacman-ot/Rain_Predictor.git
    ```
 
 2. Install the required packages:
