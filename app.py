@@ -1,12 +1,13 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request, jsonify
 import pickle
 import numpy as np
 
 app = Flask(__name__)
 
-# Load the pickled model
+
 with open('SVRModel.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
+#subprocess.Popen(['streamlit', 'run', '/path/to/streamlit_app.py'])
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
@@ -26,6 +27,9 @@ def home():
         # Make prediction
         prediction = model.predict(input_data)[0]
         
+        # Return prediction as JSON
+        return jsonify({'prediction': prediction})
+    
     return render_template('index.html', prediction=prediction)
 
 if __name__ == '__main__':
