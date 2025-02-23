@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request, jsonify
 import pickle
 import numpy as np
 
@@ -26,6 +26,9 @@ def home():
         # Make prediction
         prediction = model.predict(input_data)[0]
         
+        # Return prediction as JSON
+        return jsonify({'prediction': prediction})
+    
     return render_template('index.html', prediction=prediction)
 
 if __name__ == '__main__':
