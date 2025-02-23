@@ -4,9 +4,10 @@ import numpy as np
 
 app = Flask(__name__)
 
-# Load the pickled model
+
 with open('SVRModel.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
+#subprocess.Popen(['streamlit', 'run', '/path/to/streamlit_app.py'])
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
