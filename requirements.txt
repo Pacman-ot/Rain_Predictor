@@ -1,9 +1,0 @@
-numpy
-pandas
-seaborn
-matplotlib
-flask
-pickle
-scikit-learn
-Flask
-gunicorn
